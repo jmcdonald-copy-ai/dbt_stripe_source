@@ -1,6 +1,4 @@
 {{ config(enabled=var('using_subscriptions', True)) }}
 
-select * 
+select *
 from {{ var('plan') }}
-
-{{ livemode_predicate() }}

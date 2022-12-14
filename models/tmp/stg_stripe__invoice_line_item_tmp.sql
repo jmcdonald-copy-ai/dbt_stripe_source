@@ -1,6 +1,4 @@
 {{ config(enabled=var('using_invoices', True)) }}
 
-select * 
+select *
 from {{ var('invoice_line_item') }}
-
-{{ livemode_predicate() }}

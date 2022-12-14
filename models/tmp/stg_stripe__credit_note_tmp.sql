@@ -1,5 +1,4 @@
 {{ config(enabled=var('using_credit_notes', False)) }}
 
-select * 
+select *
 from {{ var('credit_note') }}
-{{ livemode_predicate() }}

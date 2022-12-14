@@ -1,6 +1,4 @@
 {{ config(enabled=var('using_payment_method', True)) }}
 
-select * 
+select *
 from {{ var('payment_method') }}
-
-{{ livemode_predicate() }}
